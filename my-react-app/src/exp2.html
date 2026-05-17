@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Admission Form</title>
+</head>
+<body>
+<h2 align="center">Student Admission Form</h2>
+<form action="admission.php" method="post">
+<!-- Student Details -->
+<fieldset>
+<legend>Student Details</legend>
+<label>Student Name:</label><br>
+<input type="text" name="sname" required><br><br>
+<label>Student ID:</label><br>
+<input type="text" name="sid"><br><br>
+<label>Email:</label><br>
+<input type="email" name="email"><br><br>
+<label>Mobile Number:</label><br>
+<input type="tel" name="mobile" pattern="[0-9]{10}"><br><br>
+<label>Date of Birth:</label><br>
+<input type="date" name="dob"><br><br>
+</fieldset>
+<br>
+<!-- Gender -->
+<fieldset>
+<legend>Gender</legend>
+<input type="radio" name="gender" value="Male"> Male<br>
+<input type="radio" name="gender" value="Female"> Female<br>
+<input type="radio" name="gender" value="Other"> Other<br>
+</fieldset>
+<br>
+<!-- Academic Information -->
+<fieldset>
+<legend>Academic Information</legend>
+<label>Department:</label><br>
+<select name="department">
+<option>Computer Science</option>
+<option>Information Technology</option>
+<option>Electronics</option>
+<option>Mechanical</option>
+<option>Civil</option>
+</select>
+<br><br>
+<label>Year of Study:</label><br>
+<select name="year">
+<option>1st Year</option>
+<option>2nd Year</option>
+<option>3rd Year</option>
+<option>4th Year</option>
+</select>
+<br><br>
+<label>Subjects Interested:</label><br>
+<input type="checkbox" name="subject[]" value="Web Development"> Web
+Development<br>
+<input type="checkbox" name="subject[]" value="Data Science"> Data Science<br>
+<input type="checkbox" name="subject[]" value="Artificial Intelligence"> Artificial
+Intelligence<br>
+<input type="checkbox" name="subject[]" value="Cyber Security"> Cyber Security<br>
+</fieldset>
+<br>
+<!-- Additional Details -->
+<fieldset>
+<legend>Additional Details</legend>
+<label>Address:</label><br>
+<textarea name="address" rows="4" cols="40"></textarea><br><br>
+<label>Upload Resume:</label><br>
+<input type="file" name="resume"><br><br>
+<label>Preferred Study Time:</label><br>
+<input type="time" name="studytime"><br><br>
+<label>Favorite Subject Color:</label><br>
+<input type="color" name="favcolor"><br><br>
+</fieldset>
+<br>
+<center>
+<input type="submit" value="Register"><input type="reset" value="Clear">
+</center>
+</form>
+</body>
+</html>
