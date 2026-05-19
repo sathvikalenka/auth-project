@@ -8,7 +8,7 @@ export default function Dashboard() {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await axios.get("http://localhost:7000/dashboard", {
+      const res = await axios.get("https://auth-project-v56b.onrender.com/dashboard", {
         headers: {
           Authorization: "Bearer " + token
         }

@@ -12,7 +12,7 @@ export default function Login() {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post("http://localhost:7000/login", form);
+      const res = await axios.post("https://auth-project-v56b.onrender.com/login", form);
 
       localStorage.setItem("token", res.data.token);
 

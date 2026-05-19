@@ -10,7 +10,7 @@ export default function Register() {
   });
   const handleSubmit = async () => {
     try {
-      const res = await axios.post("http://localhost:7000/register", form);
+      const res = await axios.post("https://auth-project-v56b.onrender.com/register", form);
       alert(res.data.message);
       navigate("/login");
 
