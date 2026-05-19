@@ -8,7 +8,7 @@ export default function Dashboard() {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await axios.get("https://auth-project-v56b.onrender.com/dashboard", {
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/login`, {
         headers: {
           Authorization: "Bearer " + token
         }

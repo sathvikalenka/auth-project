@@ -12,7 +12,7 @@ export default function Login() {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post("https://auth-project-v56b.onrender.com/login", form);
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}/login`, form);
 
       localStorage.setItem("token", res.data.token);
 
